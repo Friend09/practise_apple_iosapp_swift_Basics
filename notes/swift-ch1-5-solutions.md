@@ -31,6 +31,7 @@ print("Is student: \(isStudent)")
 **Beginner Explanation:** Swift is smart enough to figure out what type your variables should be based on the value you give them. This is called "type inference." You can also write the type explicitly with a colon.
 
 **Python Comparison:** This is like Python's dynamic typing, but Swift checks types at compile time:
+
 ```python
 # Python - types determined at runtime
 name = "Swift Learner"  # Python figures out this is a string
@@ -68,6 +69,7 @@ print("Pi as int: \(piAsInt)")
 **Beginner Explanation:** To convert between types, use the type name like `String()`, `Int()`, or `Double()`. Some conversions might fail (like converting "abc" to a number), so Swift gives you an optional result.
 
 **Python Comparison:** Similar to Python's type conversion, but safer:
+
 ```python
 # Python - might crash if conversion fails
 number = 42
@@ -107,6 +109,7 @@ if fullName.hasPrefix("John") {
 **Beginner Explanation:** You can combine strings with `+` or use string interpolation with `\()`. Strings have useful methods like `count`, `uppercased()`, and `contains()`.
 
 **Python Comparison:** Very similar to Python string operations:
+
 ```python
 # Python string operations
 first_name = "John"
@@ -147,6 +150,7 @@ print("Random number 1-10: \(randomNum)")
 **Beginner Explanation:** Swift has all the basic math operators. Division of integers gives you an integer result. For decimal results, convert to Double first.
 
 **Python Comparison:** Math operations are similar, but Swift is more strict about types:
+
 ```python
 # Python - automatically handles type conversion
 a = 10
@@ -229,6 +233,7 @@ print("Logged in: \(isLoggedIn)")
 **Beginner Explanation:** Use `let` for things that won't change (constants) and `var` for things that will change (variables). It's good practice to use `let` by default.
 
 **Python Comparison:** Python doesn't have built-in constants, but Swift enforces them:
+
 ```python
 # Python - nothing stops you from changing these
 USER_NAME = "SwiftLearner"  # Convention says don't change, but you can
@@ -265,6 +270,7 @@ if true {
 **Beginner Explanation:** Variables have "scope" - where they can be used. Global variables work everywhere. Function variables only work inside that function. Block variables only work inside that block.
 
 **Python Comparison:** Similar scoping rules, but Swift is stricter:
+
 ```python
 # Python scope works similarly
 global_message = "I'm available everywhere"
@@ -301,6 +307,7 @@ print("Optional name: \(optionalName)")
 **Beginner Explanation:** Swift usually knows what type you want. Be explicit when the type isn't obvious or when you want a specific type.
 
 **Python Comparison:** Python 3.5+ has type hints, but they're optional:
+
 ```python
 # Python with type hints (optional)
 name: str = "John"          # Like Swift's explicit typing
@@ -374,6 +381,7 @@ print("\(name1) < \(name2): \(name1 < name2)")  // Alphabetical order
 **Beginner Explanation:** Comparison operators let you compare values. They work with numbers, strings, and other types. The result is always true or false.
 
 **Python Comparison:** Exactly the same operators in both languages:
+
 ```python
 # Python comparison operators (identical to Swift)
 a = 10
@@ -409,6 +417,7 @@ print("Can drive: \(canDrive)")
 **Beginner Explanation:** Logical operators combine true/false values. `&&` means AND, `||` means OR, `!` means NOT.
 
 **Python Comparison:** Similar operators, different syntax:
+
 ```python
 # Python logical operators
 is_weekend = True
@@ -451,6 +460,7 @@ if age >= 18 && hasTicket {
 **Beginner Explanation:** If statements let your program make decisions. Use `if-else if-else` for multiple choices. Combine conditions with `&&` and `||`.
 
 **Python Comparison:** Very similar structure, slightly different syntax:
+
 ```python
 # Python if statements
 temperature = 25
@@ -509,6 +519,7 @@ default:
 **Beginner Explanation:** Switch statements are great for multiple specific values. Use ranges like `90...100` for ranges of numbers. The `default` case handles everything else.
 
 **Python Comparison:** Python 3.10+ has match statements (similar to switch):
+
 ```python
 # Python 3.10+ match statement (like Swift switch)
 day_number = 3
@@ -556,6 +567,7 @@ print(advice)
 **Beginner Explanation:** The ternary operator `condition ? value1 : value2` is a shortcut for simple if-else statements. Use it for simple choices between two values.
 
 **Python Comparison:** Python has a similar feature but different syntax:
+
 ```python
 # Python conditional expression
 age = 20
@@ -652,6 +664,7 @@ print("Name: \(name), Age: \(age)")
 **Beginner Explanation:** Functions are reusable blocks of code. They can take inputs (parameters) and return outputs. Use `func` to create them.
 
 **Python Comparison:** Very similar to Python functions:
+
 ```python
 # Python functions
 def say_hello():                    # Swift: func sayHello()
@@ -864,14 +877,14 @@ printReport(for: bob)
 
 ### Swift vs Python Quick Reference:
 
-| Concept | Swift | Python |
-|---------|-------|--------|
-| **Variables** | `var name = "John"` | `name = "John"` |
-| **Constants** | `let age = 25` | `AGE = 25` (convention only) |
-| **Functions** | `func add(a: Int, b: Int) -> Int` | `def add(a, b):` |
-| **If statements** | `if condition && other` | `if condition and other:` |
-| **String interpolation** | `"Hello \(name)"` | `f"Hello {name}"` |
-| **Type safety** | Enforced at compile time | Optional type hints |
+| Concept                  | Swift                             | Python                       |
+| ------------------------ | --------------------------------- | ---------------------------- |
+| **Variables**            | `var name = "John"`               | `name = "John"`              |
+| **Constants**            | `let age = 25`                    | `AGE = 25` (convention only) |
+| **Functions**            | `func add(a: Int, b: Int) -> Int` | `def add(a, b):`             |
+| **If statements**        | `if condition && other`           | `if condition and other:`    |
+| **String interpolation** | `"Hello \(name)"`                 | `f"Hello {name}"`            |
+| **Type safety**          | Enforced at compile time          | Optional type hints          |
 
 ### Essential Beginner Tips:
 
@@ -892,6 +905,7 @@ printReport(for: bob)
 ### Next Steps:
 
 After mastering these fundamentals, you're ready for:
+
 - **Chapter 6**: Optionals (Swift's safety feature for missing values)
 - **Chapter 7**: Tuples (grouping related values)
 - **Chapter 8**: Structs (creating your own data types)
