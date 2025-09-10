@@ -95,6 +95,7 @@ print("Class Point 2: (\(classPoint2.x), \(classPoint2.y))")  // (15, 25) - chan
 ```
 
 **Beginner Explanation:**
+
 - **Structs** = Like separate photocopies (value types)
 - **Classes** = Like shared documents (reference types)
 
@@ -373,6 +374,7 @@ print("Freezing point: \(freezing.description)")
 ```
 
 **Beginner Explanation:**
+
 - **Stored properties** = Regular variables that store values
 - **Computed properties** = Like Python's `@property` - calculated on the fly
 - **Property observers** = Run code when a property changes
@@ -585,6 +587,7 @@ for book in availableBooks {
 ```
 
 **Beginner Explanation:** This library system shows:
+
 - **Structs for simple data** (Book) - no need for sharing or inheritance
 - **Classes for complex objects** (LibraryMember, Library) - need shared state and behavior
 - **Encapsulation** with private properties to protect data
@@ -596,22 +599,26 @@ for book in availableBooks {
 ### When to Use Structs vs Classes:
 
 **Use Structs When:**
+
 - Simple data containers (like coordinates, colors, configurations)
 - You want independent copies
 - No inheritance needed
 - Value semantics (copying) makes sense
 
 **Use Classes When:**
+
 - Complex objects with behavior
 - Need inheritance
 - Want shared state between variables
 - Reference semantics (sharing) makes sense
 
 ### Memory and Performance:
+
 - **Structs**: Stored on the stack (faster), automatically cleaned up
 - **Classes**: Stored on the heap (flexible), reference counted for cleanup
 
 ### Python Comparisons:
+
 - **Swift Struct** ≈ **Python dataclass** with value semantics
 - **Swift Class** ≈ **Python class** with reference semantics
 - **Swift `mutating`** ≈ Modifying **Python dataclass** fields
